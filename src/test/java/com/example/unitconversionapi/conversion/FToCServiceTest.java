@@ -14,6 +14,6 @@ class FToCServiceTest {
 
     @Test
     void testConvert(){
-        assertEquals(0.f, fToCService.covert(32.f));
+        assertEquals(0.f, fToCService.convert(32.f));
     }
 }
