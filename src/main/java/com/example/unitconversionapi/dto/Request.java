@@ -37,6 +37,6 @@ public class Request {
         }
 
     public String getConversionCode(){
-        return fromType + toType;
+        return fromType + getToType();
     }
 }
