@@ -35,4 +35,8 @@ public class Request {
     public void setToType(String toType) {
             this.toType = toType;
         }
+
+    public String getConversionCode(){
+        return fromType + getToType();
+    }
 }

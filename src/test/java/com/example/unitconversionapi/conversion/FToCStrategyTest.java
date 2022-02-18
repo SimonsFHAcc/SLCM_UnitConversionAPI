@@ -7,13 +7,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
-class FToCServiceTest {
+class FToCStrategyTest {
 
     @Autowired
-    FToCService fToCService;
+    FToCStrategy fToCStrategy;
 
     @Test
     void testConvert(){
-        assertEquals(0.f, fToCService.convert(32.f));
+        assertEquals(0.f, fToCStrategy.convert(32.f));
     }
 }
