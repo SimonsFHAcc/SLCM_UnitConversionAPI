@@ -4,6 +4,10 @@ public class Response {
 
     private float result;
 
+    public Response() {
+
+    }
+
     public Response(float result) {
         this.result = result;
     }

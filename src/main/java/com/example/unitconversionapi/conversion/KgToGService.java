@@ -11,7 +11,7 @@ public class KgToGService implements ConversionService{
 
     @Override
     public float convert(float f) {
-        return 0;
+        return f * 1000.f;
     }
 
 

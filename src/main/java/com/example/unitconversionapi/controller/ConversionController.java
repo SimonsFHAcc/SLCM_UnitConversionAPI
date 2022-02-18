@@ -1,5 +1,6 @@
 package com.example.unitconversionapi.controller;
 
+import com.example.unitconversionapi.conversion.KgToGService;
 import com.example.unitconversionapi.dto.Request;
 import com.example.unitconversionapi.dto.Response;
 import org.springframework.boot.json.JsonParserFactory;
@@ -20,13 +21,26 @@ public class ConversionController {
         //  Welcher Service / Controller übernimmt die Logik, dass der richtige conversion-Service aufgerufen wird?
         //  Und macht man das mit switch-case oder if-else? Ist das schön?
 
+
+
         String conversionMethod = request.getFromType() + request.getToType();
 
-        System.out.println(conversionMethod);
+        Response response = new Response();
+
+        switch (conversionMethod){
+            case "gkg":
+                break;
+            case "kgg":
+                KgToGService kgToGService = new KgToGService();
+                response.setResult(kgToGService.convert(request.getFromValue()));
+                break;
+            case "fc":
+                break;
+            case "cf":
+                break;
+        }
 
 
-
-
-        return null;
+        return response;
     }
 }
