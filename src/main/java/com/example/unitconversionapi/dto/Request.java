@@ -35,4 +35,14 @@ public class Request {
     public void setToType(String toType) {
             this.toType = toType;
         }
+
+
+    @Override
+    public String toString() {
+        return "Request{" +
+                "fromValue=" + fromValue +
+                ", fromType='" + fromType + '\'' +
+                ", toType='" + toType + '\'' +
+                '}';
+    }
 }
