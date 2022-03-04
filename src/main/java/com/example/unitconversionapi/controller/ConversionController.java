@@ -33,13 +33,16 @@ public class ConversionController {
             case "kgg":
                 KgToGService kgToGService = new KgToGService();
                 response.setResult(kgToGService.convert(request.getFromValue()));
+                response.setResponseMessage("Your result is: ");
                 break;
             case "fc":
                 break;
             case "cf":
                 break;
             default:
-                String text = "error";
+
+                response.setResponseMessage("Error");
+
         }
 
 
