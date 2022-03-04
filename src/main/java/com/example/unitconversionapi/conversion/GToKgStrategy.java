@@ -1,5 +1,8 @@
 package com.example.unitconversionapi.conversion;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class GToKgStrategy implements ConversionStrategy{
 
     @Override
