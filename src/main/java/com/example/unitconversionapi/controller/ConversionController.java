@@ -38,6 +38,8 @@ public class ConversionController {
                 break;
             case "cf":
                 break;
+            default:
+                String text = "error";
         }
 
 
